@@ -22,6 +22,7 @@ A clean, beginner-friendly Flutter study planner that helps students organize as
 ```bash
 git clone https://github.com/reddykancharlakoushik-netizen/studyflow-flutter.git
 cd studyflow-flutter
+flutter create .
 flutter pub get
 flutter run
 ```
@@ -41,7 +42,7 @@ screenshots/
 
 ## Screenshots
 
-The screenshots below are lightweight UI previews of the app's main screens.
+The images below are SVG UI previews of the app's main screens (not captures from a running emulator).
 
 | Dashboard | Task list |
 |---|---|
