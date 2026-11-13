@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage> {
                 contentPadding: EdgeInsets.zero,
                 leading: const Icon(Icons.calendar_today_outlined),
                 title: const Text('Due date'),
-                subtitle: Text('\${selectedDate.day}/\${selectedDate.month}/\${selectedDate.year}'),
+                subtitle: Text('${selectedDate.day}/${selectedDate.month}/${selectedDate.year}'),
                 onTap: () async {
                   final picked = await showDatePicker(context: context, initialDate: selectedDate, firstDate: DateTime(2020), lastDate: DateTime(2100));
                   if (picked != null) refreshSheet(() => selectedDate = picked);
@@ -162,7 +162,7 @@ class _HomePageState extends State<HomePage> {
     final tomorrow = today.add(const Duration(days: 1));
     if (date.year == today.year && date.month == today.month && date.day == today.day) return 'Today';
     if (date.year == tomorrow.year && date.month == tomorrow.month && date.day == tomorrow.day) return 'Tomorrow';
-    return '\${date.day}/\${date.month}/\${date.year}';
+    return '${date.day}/${date.month}/${date.year}';
   }
 
   @override
@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                     const SizedBox(height: 26),
                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
                       Text('Your tasks', style: Theme.of(context).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800)),
-                      Text('\${_tasks.length} total', style: Theme.of(context).textTheme.bodySmall),
+                      Text('${_tasks.length} total', style: Theme.of(context).textTheme.bodySmall),
                     ]),
                     const SizedBox(height: 12),
                     if (_tasks.isEmpty) const _EmptyState() else ..._tasks.map((task) => _TaskTile(task: task, dateLabel: _dateLabel(task.dueDate), onToggle: () => _toggleTask(task), onDelete: () => _deleteTask(task))),
@@ -218,7 +218,7 @@ class _ProgressCard extends StatelessWidget {
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           const Text('Daily progress', style: TextStyle(color: Colors.white70)),
           const SizedBox(height: 8),
-          Text('\${(progress * 100).round()}%', style: const TextStyle(color: Colors.white, fontSize: 34, fontWeight: FontWeight.w800)),
+          Text('${(progress * 100).round()}%', style: const TextStyle(color: Colors.white, fontSize: 34, fontWeight: FontWeight.w800)),
           const SizedBox(height: 14),
           ClipRRect(
             borderRadius: BorderRadius.circular(20),
