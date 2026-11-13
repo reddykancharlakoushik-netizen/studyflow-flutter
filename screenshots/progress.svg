@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="650" viewBox="0 0 900 650">
+<rect width="900" height="650" rx="28" fill="#f7f7fc"/>
+<rect x="30" y="24" width="840" height="602" rx="24" fill="#ffffff"/>
+<text x="70" y="82" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#252544">✦ StudyFlow</text>
+<text x="70" y="142" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#77778b">PROGRESS OVERVIEW</text>
+<text x="70" y="188" font-family="Arial,sans-serif" font-size="32" font-weight="700" fill="#252544">Small steps add up.</text>
+
+<rect x="70" y="220" width="760" height="130" rx="18" fill="#f1f0ff"/><text x="100" y="265" font-family="Arial" font-size="18" fill="#55558c">Tasks completed</text><text x="100" y="320" font-family="Arial" font-size="40" font-weight="700" fill="#5b5bd6">1 / 3</text>
+<text x="70" y="405" font-family="Arial" font-size="19" font-weight="700" fill="#292943">Your consistency</text>
+<rect x="70" y="435" width="760" height="22" rx="11" fill="#e7e7f1"/><rect x="70" y="435" width="253" height="22" rx="11" fill="#5b5bd6"/>
+<text x="70" y="500" font-family="Arial" font-size="16" fill="#77778b">Keep completing tasks to build your study streak.</text>
+<text x="70" y="590" font-family="Arial,sans-serif" font-size="14" fill="#88889b">Plan your work. Track your progress. Make today count.</text>
+</svg>
